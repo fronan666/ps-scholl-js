@@ -1,12 +1,18 @@
-//Базовые арифметические опператоры//
+//Операторы присваивания//
 
-const width = 5;
-const height = 10;
-const space = width * height ;
-const volume = 2**3;
-console.log(volume);
+let age = 18+3; 
+age += 2; //age= age + 2 
+age -= 3; //age= age -2
+age *= 2; //age = age * 2
+age /= 2; //age = age / 2
+age ++; //age = age + 1
+age --; //age = age - 1 
+console.log(age);
 
-//Строки 
-const citi = 'Moscow';
-const street = 'Novoslobotskya';
-console.log( citi + ' ,' + street );
+//Операторы сравнения 
+const vasia = 20 ;
+console.log(age > vasia)
+console.log(age >= vasia)
+console.log(age <= vasia)
+console.log(age < vasia)
+console.log(age == vasia)
