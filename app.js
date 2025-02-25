@@ -1,11 +1,15 @@
-//Данные
-const payRateUSD = 80;
-const dayHours= 5; 
-const dayWork = 5;
-const ProjectHours = 40; 
-const ProjectDay = 11;
-//Результат
-const revenue = ProjectHours * payRateUSD ;
-console.log ('стоймость работы: ' + revenue + ' $');
+const projectName = 'Сайт магазина';
+const price = 2000; 
+const author = 'Василий Пупкин';
 
-console.log('смогу ли я работать? ' + ((ProjectHours/dayHours - 2) <= ProjectDay));
+const template = author + ' заказал ' + projectName + ' по ценне ' + price + '$'
+console.log(template)
+const template2 = `${author} заказал ${projectName} по цене ${price}$ `
+
+console.log(template2)
+const template3 = 'Привет \n' + 'цена: ' + price + '$';
+console.log(template3)
+
+const template4 = `Привет
+цена: ${price}$`
+console.log(template4)
