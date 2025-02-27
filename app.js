@@ -1,11 +1,11 @@
-const age = '18'
-console.log(Number(age) + 5);
-console.log(age - 5);
-const userName = 'Вася'
-console.log(userName -5);
-console.log(String(4)+ 7);
-console.log(Boolean(0));
-
-const a = 2 + '10';
-console.log(a - 10);
+const deposit = 12000; 
+const rate = 0.07; 
+const depositLenght = 24 ;
+const houseCost =  13500
+ const res = deposit * (1 + rate/12) ** 24 ;
+ if (res>houseCost) {
+    console.log(` Мы накопили: ${res} Можем купить. Остаток ${res - houseCost}`)
+ } else {
+    console.log(`Не можем купить. Не хватает ${houseCost - res}`)
+ }
 
