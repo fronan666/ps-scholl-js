@@ -1,11 +1,13 @@
-const deposit = 12000; 
-const rate = 0.07; 
-const depositLenght = 24 ;
-const houseCost =  13500
- const res = deposit * (1 + rate/12) ** 24 ;
- if (res>houseCost) {
-    console.log(` Мы накопили: ${res} Можем купить. Остаток ${res - houseCost}`)
- } else {
-    console.log(`Не можем купить. Не хватает ${houseCost - res}`)
- }
+const secretNumber = '7' ;
 
+if (Number(secretNumber) === 7) {
+    console.log(' Угадал строго ');
+}
+if (secretNumber == 7) {
+    console.log(' Угадал не строго ');
+}
+
+const q = Number(prompt('Введите число'))
+if (q === 7) {
+    console.log(' Угадал строго ');
+}
