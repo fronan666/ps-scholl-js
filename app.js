@@ -1,12 +1,8 @@
-//Базовые арифметические опператоры//
+const adressLat = 10;
+const addresLong = 12;
+const positionLat = 7;
+const positionLong = 8;
 
-const width = 5;
-const height = 10;
-const space = width * height ;
-const volume = 2**3;
-console.log(volume);
+const distance = Math.sqrt(((positionLat-adressLat)**2)+((addresLong-positionLong)**2))
+console.log(distance)
 
-//Строки 
-const citi = 'Moscow';
-const street = 'Novoslobotskya';
-console.log( citi + ' ,' + street );
