@@ -1,12 +1,19 @@
-//Базовые арифметические опператоры//
+const language = '';
 
-const width = 5;
-const height = 10;
-const space = width * height ;
-const volume = 2**3;
-console.log(volume);
-
-//Строки 
-const citi = 'Moscow';
-const street = 'Novoslobotskya';
-console.log( citi + ' ,' + street );
+switch(language) {
+    case 'ru':
+    console.log('Привет!');
+    break;
+    case 'en':
+    console.log('Hello!');
+    break;
+    case 'de':
+    console.log('Guten Tag!');
+    break;
+    case 'es':
+    console.log('Buenas tardes');
+    break;
+    default:
+    console.log('Error');
+    
+}
