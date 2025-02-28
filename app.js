@@ -1,17 +1,19 @@
-const bmwX3Price = 100000;
-const fordFocusPrice = 10000;
-const budget = 200000;
-let message;
+const language = '';
 
-// if (budget > bmwX3Price ){
-//     message = 'BMW';
-// } else if (budget > fordFocusPrice) {
-//     message = 'Ford';
-// } else {
-//     message = 'Велосипет';
-// }
-
-console.log(`Я хочу купить ${budget > bmwX3Price ? 'BMW': budget > fordFocusPrice ? 'Ford': 'Велосипед'}`)
-
-
-10 > 0 ? console.log('Больше 0') : console.log('Не больше нуля')
+switch(language) {
+    case 'ru':
+    console.log('Привет!');
+    break;
+    case 'en':
+    console.log('Hello!');
+    break;
+    case 'de':
+    console.log('Guten Tag!');
+    break;
+    case 'es':
+    console.log('Buenas tardes');
+    break;
+    default:
+    console.log('Error');
+    
+}
