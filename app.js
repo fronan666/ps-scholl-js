@@ -1,27 +1,17 @@
-const role = 'ceo';
+const bmwX3Price = 100000;
+const fordFocusPrice = 10000;
+const budget = 200000;
+let message;
+
+// if (budget > bmwX3Price ){
+//     message = 'BMW';
+// } else if (budget > fordFocusPrice) {
+//     message = 'Ford';
+// } else {
+//     message = 'Велосипет';
+// }
+
+console.log(`Я хочу купить ${budget > bmwX3Price ? 'BMW': budget > fordFocusPrice ? 'Ford': 'Велосипед'}`)
 
 
-
-switch (role) {
-    case 'manager':
-    case 'admin':
-    console.log('Не руководитель');
-    break;
-    case 'ceo': 
-    console.log('Руководитель');
-    break;
-    default:
-    console.log('Мы тебя не знаем!');
-}
-
-const num = 0; 
-switch(true) {
-    case num > 0 : //true === num > 0
-    console.log('Положительный');
-    break ;
-    case num < 0 :
-    console.log('Отрицательный');
-    break ;
-    default:
-        console.log('Ноль!')
-}
+10 > 0 ? console.log('Больше 0') : console.log('Не больше нуля')
