@@ -1,15 +1,10 @@
-function logName(name , surname) {
-    console.log(`Мое имя ${name} ${surname}`);
+function powerOfTwo(num) {
+    return num * num ;
 }
+num = 6 ;
+console.log(powerOfTwo(num)) ;
 
-logName('Вячеслав', 'Воронцов') ;
-
-function countDepositSum(depositInUSD, month, rate) {
-    const Sum = depositInUSD * (1+rate / 12)**month
-    return Sum;
+const poft = function (num) {
+    return num * num ;
 }
-const example1 = countDepositSum(1000 , 24 , 0.12);
-console.log(example1);
-
-const example2 = countDepositSum(1000 , 48 , 0.10);
-console.log(example2);
+console.log(poft(num)) ;
