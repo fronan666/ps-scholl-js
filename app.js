@@ -1,17 +1,7 @@
-console.log('Вася' || 'Олег');
-console.log(false || 'Олег');
-console.log('Вася' || false);
+let age = 0;
 
-console.log('Вася' && 'Олег');
-console.log(false && 'Олег');
-console.log('Вася' && false);
+console.log(age || 18);
+console.log(age ??  18);
 
-let a;
-const userName = a || 'Петя';
-console.log(userName);
-
-const isAdmin = true;
-const fileName = isAdmin && 'file.mp4';
-console.log(fileName);
 
 
