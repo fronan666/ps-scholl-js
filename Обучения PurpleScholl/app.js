@@ -1,12 +1,5 @@
-function powerOfTwo(num){
-    console.log(num)
-    return num*num;
-    
 
-}
-num = 5;
-console.log(powerOfTwo(6));
 
-const poft = (num) => num * num;
+const toPowerArrow = (num, power) => num ** power;
     
-console.log(poft(8));
+console.log(toPowerArrow(2 , 3));
