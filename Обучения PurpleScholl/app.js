@@ -1,17 +1,18 @@
-function macbookCredit (age, hasJob) {
-    switch(true){
-        case age >= 24 && hasJob :
-            return 500 ;
-        case age >= 24 :
-            return 100 ;
-        default :
-        return 0 ;
+
+
+
+function convertCurrency(amount, fromCurrency, toCurrency) {
+const rates = {
+    USD : 1,
+    RUB : 0.024 ,
+    EUR : 1.09 ,
     }
-}
+    if (!(fromCurrency in rates) || !(toCurrency in rates)) {
+        return null;
+    }
+    const baseAmount = amount*rates[fromCurrency];
+    const convertedAmount = baseAmount/rates[toCurrency]
+    return parseFloat(convertedAmount.toFixed(2));
 
-function canBuy(productedPrice , age, money, hasJob = false ) {
-    const CreditMomey = macbookCredit (age, hasJob) ;
-    return productedPrice <= money + CreditMomey ;
 }
-console.log(canBuy(2000, 24, 1501, true))
-
+console.log(convertCurrency(1000 , 'USD' , 'RUB'))
