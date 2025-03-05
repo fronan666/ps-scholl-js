@@ -1,18 +1,20 @@
+const users = ['Аня', 'Петя', 'Вася'];
+console.log(users);
+users[2] = 'Кристина';
+console.log(users);
+users[3] = 'Слава';
+console.log(users);
+const arrLenght = users.push('Никита');
+console.log(users);
+console.log(arrLenght);
 
+users.unshift('Вика');
+console.log(users);
 
+const el = users.pop();
+console.log(el);
+console.log(users);
 
-function convertCurrency(amount, fromCurrency, toCurrency) {
-const rates = {
-    USD : 1,
-    RUB : 0.024 ,
-    EUR : 1.09 ,
-    }
-    if (!(fromCurrency in rates) || !(toCurrency in rates)) {
-        return null;
-    }
-    const baseAmount = amount*rates[fromCurrency];
-    const convertedAmount = baseAmount/rates[toCurrency]
-    return parseFloat(convertedAmount.toFixed(2));
-
-}
-console.log(convertCurrency(1000 , 'USD' , 'RUB'))
+const el2 = users.shift()
+console.log(el2);
+console.log(users);
