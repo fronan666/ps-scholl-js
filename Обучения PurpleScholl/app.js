@@ -1,39 +1,9 @@
 const roles = ['user', 'admin' , 'manager' , 'superuser'];
 
-const res = roles.slice(2);
-console.log(roles);
+const url = 'auth/user/login';
+const res = url.split('/');
 console.log(res);
 
-const res2 = roles.slice(2 , 3);
-console.log(roles);
-console.log(res2);
+console.log(roles.join('-'))
 
-const res3 = roles.slice(-1);
-console.log(roles);
-console.log(res3);
-
-const res4 = roles.slice(1, -1);
-console.log(res4);
-
-
-// const res5 = roles.splice(2);
-// console.log(roles);
-// console.log(res5);
-
-// const res6 = roles.splice(2,2);
-// console.log(res6);
-// console.log(roles);
-
-// const res7 = roles.splice(-2);
-// console.log(res7);
-// console.log(roles);
-
-const res8 = roles.reverse();
-
-console.log(res8);
-console.log(roles);
-
-const newRoles = ['sysadmin', 'developer'];
-const res9 = roles.concat(newRoles);
-console.log(res9)
 
