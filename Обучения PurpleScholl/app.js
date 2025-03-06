@@ -1,14 +1,22 @@
-const userData = ['Катя' , 21 , 'Москва' ];
+const url = 'https://purpleschool.ru/course/javascript';
 
-// function getData() {
-//     return ['Катя' , 21 , 'Москва']
-// }
-// const userName = getData()[0];
-// const Age = getData()[1];
-// const city = getData()[2];
+function getUrlParts(url) {
+    const [protokol, _, host , ...path] = url.split('/');
+    if(protokol === 'https:' || protokol === 'http:') {
+        if(!host.includes('.')){
+            return;
+        }
+        console.log(protokol, _ , host ,path)
+        console.log(`Проток: (${protokol.split(':')[0]})`);
+        console.log(`Доменое имя: (${host})`)
+        console.log(`Путь: (/${path.join('/')})`)
+    }
+}
 
-const [userName, Age, city ] = userData;
-console.log(userName , Age , city);
+getUrlParts(url);
+
+
+
 
 
 
