@@ -1,9 +1,21 @@
 
+const tasks = ['Задача 1', 'Задача 2', 'Задача 3 ']
 
 
+for(i = 0; i< tasks.length; i++) {
+    if(tasks[i] === 'Задача 2'){
+        continue;
+    }
+    console.log(tasks[i])
+}
 
-for(let i = 1 ;i < 10;i++ ) {
-    console.log(`Наш баланс ${i} $`);
+console.log('------)
+
+for(i = 0; i< tasks.length; i++) {
+    if(tasks[i] === 'Задача 2'){
+        break;
+    }
+    console.log(tasks[i])
 }
 
 
