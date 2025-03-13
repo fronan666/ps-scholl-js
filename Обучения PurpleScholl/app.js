@@ -1,26 +1,17 @@
-function power(pow) {
-    return function (num){
-        return num**pow;
-    }
-}
-
-const powerOfTwo = power(2); 
-console.log(powerOfTwo(5));
-
-const powerOfThree = power(3);
-
-console.log(powerOfThree(5));
-
-console.log(power(5)(4));
+const score = [5 , 10 , 0 , 15] ;
 
 
+// for(const [i , el] of score.entries()) {
+//     console.log(`Раунд ${i + 1}: ${el}`)
+// }
 
+score.forEach((el, i ) => {
+    console.log(`Раунд ${i + 1}: ${el}`)
+});
 
-
-
-
-
-
+// ( 5 , 0) => { .... }
+// ( 10 , 1) => { .... }
+// и т.д
 
 
 
