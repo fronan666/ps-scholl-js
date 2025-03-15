@@ -1,28 +1,18 @@
-const operations = [100 , -20 , 7 , -30 , 50]; 
-
-let balance = 0;
-
-for(let operation of operations) {
-    balance += operation;
-
-}
+const arr = [2, 4, 4, 10 ];
 
 
 
-const finalBalance = operations.reduce((acc , operation, i) => {
-    console.log(`Итерация: ${i}, acc: ${acc}, operation: ${operation}`)
-    return acc += operation
+const avg = arr.reduce((acc , el, i) => {
+    if(i != arr.length -1){
+        return acc + el;
+    }else {
+        return (acc + el)/ arr.length
+    }
 }, 0);
-console.log(finalBalance);
+
+console.log(avg);
+
+
 
 //0 - acc = 0, value = 100
 //1 -acc = 100 , value = -20 и т.д
-const minElement = operations.reduce((acc , operation, i) => {
- if(operation > acc) {
-    return acc ;
- }else {
-    return operation;
- }
-
-}, 0);
-console.log(minElement);
