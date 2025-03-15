@@ -1,11 +1,29 @@
-const arr = [2, 4, 4, 10, 20];
-function some(array, element) {
-    const res = array.find(el => el===element)
-    return res == undefined? false : true ;
-}
-console.log(some(arr , 2));
+const users = ['Катя', 'Петя', 'Ваня', 'Аня'];
+console.log(users);
+users.sort();
+console.log(users);
 
-const result = arr.some(el => el === 2);
-console.log(result);
+const operations = [100 , -20 , 7 , 50 , 10];
+console.log(operations);
+
+// < 0 - a, b - сохраняем порядок
+// > 0 - b , a - меняем порядок 
+
+operations.sort((a, b) => {
+    if(a<b) {
+        return 1;
+    } 
+    if(a>b){
+        return -1 ;
+    }
+    });
+    console.log(operations);
+
+operations.sort((a, b) => a + b );
+
+console.log(operations);
+
+
+
 
 
