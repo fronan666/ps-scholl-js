@@ -1,13 +1,12 @@
-const arr = [1 , 2 ,3 ,4 ,5];
-console.log(arr);
-console.log(new Array(1 ,2 , 3, 4, 5));
+const userName = 'Васян Пупкина';
+console.log(userName)
+console.log(userName[0]);
+console.log(userName[0] + userName[1]);
+console.log(userName.charAt(2));
+console.log(userName.length);
+console.log(userName.indexOf('н'));
+console.log(userName.lastIndexOf('н'));
+console.log(userName.includes('н'))
+console.log(userName.slice(6));
+console.log(userName.slice(6 , 10));
 
-const arr2 = new Array(5);
-console.log(arr2);
-console.log(arr2.map(el =>1));
-arr2.fill(1 , 0 , 3);
-arr2.fill(2 ,3 ,5 );
-console.log(arr2);
-
-const arr3 = Array.from({length: 5}, (cur , i) => i + 1  );
-console.log(arr3);
