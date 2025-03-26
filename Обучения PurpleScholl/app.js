@@ -1,9 +1,16 @@
-const fullUserName = 'Вася aka terminator Пупкин';
+const userFullName = 'Вася Пупкин Васильевич';
+console.log(userFullName.split(' '));
 
-const userName =  fullUserName.slice(0 , fullUserName.indexOf(' '));
-console.log(userName);
+const [firstName, familyName, lastName] = userFullName.split(' ');
+console.log(firstName);
+console.log(familyName);
+console.log(lastName);
 
-const userSurname = fullUserName.slice(fullUserName.lastIndexOf ('П'), fullUserName.length );
-console.log(userSurname);
+const arr = ['Ты' , 'Знаешь', 'JS'];
+console.log(arr.join(' '))
+
+
+
+
 
 
