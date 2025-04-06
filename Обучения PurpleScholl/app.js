@@ -1,29 +1,28 @@
-const userArray = ['Слава', 'Воронцов', 24];
+const users = [
+    { 
+      name: 'Вася', 
+      surname: 'Пупкин',
+      age : 30,
+      skills: ['Разработка', 'Devops']
+    },
+    { 
+      name: 'Катя', 
+      surname: 'Белова',
+      age : 18,
+      skills: ['Design']
+    }
 
-const user = {
-  name: 'Слава',
-  surname: 'Воронцов',
-  age: 24,
-  skills:  [
-    'Прграммирования',
-    'Готовка'
-  ],
-  eduBasic: 'Школа 10',
-  eduPro: 'МФТИ'
-};
+];
 
-console.log(user);
-console.log(user.skills);
-console.log(user['skills']);
 
-const levelEdu = 'Pro';
-console.log(user['edu' + levelEdu]);
+const userData = users.map(user => {
+  return {
+    fullName: `${user.name} ${user.surname}`,
+    skillNum: user.skills.length
+  };
+});
+console.log(userData);
 
-user.city = 'Москва';
-console.log(user.city);
-
-user.age = 30;
-console.log(user.age);
 
 
 
