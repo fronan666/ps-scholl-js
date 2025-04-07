@@ -1,39 +1,31 @@
-const wallet = {
-  balance : 0,
-  operation : [],
-  increase: function(sum , reason) {
-    this.balance += sum;
-    this.operation.push({
-      reason: reason,
-      sum : sum
+const cities = {
+  msk : {
+    temp: 25,
+    lt: 100
 
-    });
-    return true ;
   },
-  decrease: function(sum , reason) {
-    if(this.balance < sum) {
-      console.log('Недостаточно баланса')
-      return false;
-    }
-    this.balance -= sum;
-    this.operation.push({
-      reason: reason,
-      sum : -sum
-    });
-    return true;
-  },
-  getOperationLength: function() {
-    return this.operation.length;
+  spb: {
+    lt: 200,
+    temp: 20,
   }
-};
+}
 
-console.log(wallet.increase(1000 , 'Зарплата'));
-console.log(wallet.getOperationLength());
-console.log(wallet.decrease(2000 , 'Зарплата'));
-console.log(wallet.getOperationLength());
-console.log(wallet.decrease(500 , 'Зарплата'));
-console.log(wallet.getOperationLength());
-console.log(wallet.balance);
+
+let sumTemp = 0;
+let citiesCount = Object.keys(cities).length;
+// for(const key in cities) {
+//   console.log(key);
+//   citiesCount++ ;
+//   sumTemp += cities[key].temp;
+
+// }
+
+for(const key of Object.keys(cities)) {
+  sumTemp += cities[key].temp;
+}
+console.log(sumTemp/citiesCount)
+
+
 
 
 
