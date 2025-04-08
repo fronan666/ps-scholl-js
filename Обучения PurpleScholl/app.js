@@ -1,24 +1,21 @@
-let user = {
-  name: 'Вася',
-  age: 30,
-  city: 'Moscow',
+const cities = {
+  msk: {
+    temp: {
+      celsia: 26,
+    },
+  },
+  spb: {
 
-};
-const {age, ...userWithouAge} = user;
-console.log(age);
-console.log(userWithouAge);
-
-const additionalData = {
-  skills: ['Разработка', 'Дизайн'],
-  creditCard: '2234-2344-2212-6544'
-
+  }
 };
 
-user = {
- ...user,
- ...additionalData
-};
-console.log(user)
+const city = 'spb'
+if(cities[city] && cities[city].temp) {
+  console.log(cities[city].temp.celsia);
+}
+
+console.log(cities[city]?.temp?.celsia);
+
 
 
 
