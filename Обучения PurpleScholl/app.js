@@ -1,51 +1,25 @@
-const warehouse = {
-  goods: [],
-  findGoodById: function (id) {
-    return this.goods.find(g => g.id == id);
-  },
+'use strick' ;
 
-  addGood: function (good) {
-    const exsistedGood = this.findGoodById(good.id)
-    if(exsistedGood) {
-      console.log('Этот товар уже есть на складе');
-      return;
-    }
-    this.goods.push(good)
-  },
-  getWeightKg: function () {
-    return this.goods.reduce((acc , el) =>{
-      acc += el.weight?.kg? el.weight.kg : 0 ;
-    }, 0 )
-  },
+let firstName = 'Anton';
+let firstName2 = firstName;
+firstName2 = 'new';
+console.log(firstName);
+console.log(firstName2);
+
+
+const user = {
+  name: 'Anton',
 };
-
-/* Товары */
-const car = {
-  id: 1,
-  weight: {
-  kg: 1000
-  },
-  brand: 'Ford'
-}
-
-const chair = {
-  id: 2,
-  weight: {
-  kg: 2
-  }
-}
-
-const paper = {
-  id: 3,
-  color: 'red'
-}
+const user2 = user;
+user2.name = 'New';
+console.log(user);
+console.log(user2);
 
 
-warehouse.addGood(car)
-warehouse.addGood(car)
-warehouse.addGood(chair)
-warehouse.addGood(paper)
-console.log(warehouse.goods)
+
+
+
+
 
 
 
