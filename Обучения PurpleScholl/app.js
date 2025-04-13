@@ -1,19 +1,11 @@
-'use strick' ;
+'use strict';
 
-let firstName = 'Anton';
-let firstName2 = firstName;
-firstName2 = 'new';
-console.log(firstName);
-console.log(firstName2);
+let myCoolVariable = 1;
+if(true) {
+  myCoolVariabl = 3;
+}
+console.log(myCoolVariable)
 
-
-const user = {
-  name: 'Anton',
-};
-const user2 = user;
-user2.name = 'New';
-console.log(user);
-console.log(user2);
 
 
 
