@@ -1,24 +1,32 @@
 'use strict';
 
-//let , var, const , func , arguments
-//scope chain
-//this
+const company = {
+  name: 'ООО Агро',
+  employees : [
+    {
+      name: 'Света',
+      getName : function() {
+        return this.name;
+    }
+  }
+  ],
+  ceo: {
+    name : 'Вася',
+    getName : function() {
+      return this.name;
+    },
+  },
+
+  getName : function() {
+    return this.name;
+  },
+
+};
 
 
-function sumNum(num1 , num2) {
-  console.log(this);
-  console.log(arguments);
-  return num1 + num2;
-}
-
-const sumNumArr = (num1 , num2) => {
-  console.log(this);
-  console.log(arguments);
-  return num1 + num2;
-}
-
-console.log(sumNum(1 ,4));
-console.log(sumNumArr(1 ,4));
+console.log(company.getName());
+console.log(company.ceo.getName());
+console.log(company.employees.map(employee => employee.getName()))
 
 
 
