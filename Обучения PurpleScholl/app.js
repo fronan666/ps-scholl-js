@@ -1,34 +1,24 @@
 'use strict';
 
-const user = {
-  firstName: 'Слава',
-  lastName: 'Воронцов',
-  age: 20 ,
-  getUserInfo:function() {
-    console.log(this);
-    console.log(`${this.firstName}  ${this.lastName}`);
-    
-    const canDrink = () => {
-      if(this.age >= 18) {
-        console.log('Может уже пить!');
-      } else {
-        console.log('Не может пить');
-      }
-    }
-      canDrink();
-
-  },
-
-  getUserInfoArrow:() => {
-    console.log(this);
-    console.log(`${this.firstName}  ${this.lastName}`);
-  },
-};
-
-user.getUserInfo();
-user.getUserInfoArrow();
+//let , var, const , func , arguments
+//scope chain
+//this
 
 
+function sumNum(num1 , num2) {
+  console.log(this);
+  console.log(arguments);
+  return num1 + num2;
+}
+
+const sumNumArr = (num1 , num2) => {
+  console.log(this);
+  console.log(arguments);
+  return num1 + num2;
+}
+
+console.log(sumNum(1 ,4));
+console.log(sumNumArr(1 ,4));
 
 
 
